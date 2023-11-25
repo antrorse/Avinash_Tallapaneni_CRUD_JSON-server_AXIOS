@@ -75,7 +75,7 @@ My name is Avinash Tallapaneni, and I am a front-end web developer passionate ab
 
 ## Feedback
 
-I appreciate any feedback you have on CineSpectrum. If you have any suggestions, bug reports, or general feedback, please feel free to
+I appreciate any feedback you have on Crud Application. If you have any suggestions, bug reports, or general feedback, please feel free to
 
 # License
 

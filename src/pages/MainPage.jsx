@@ -39,11 +39,12 @@ const MainPage = () => {
     <div className=" w-full h-[100vh] flex flex-col justify-start items-stretch bg-slate-800 text-slate-100 relative  overflow-scroll">
       <nav className="bg-slate-900 z-10  w-full flex items-center justify-between p-2 ">
         <div className=" flex flex-col items-center ">
-          <span className="text-2xl">Fetching data using axios.</span>
-          <span className="italic">
+          <span className="text-xl">Fetching data using axios.</span>
+          <span className="italic text-sm">
             Install json-server and watch the db.json file on port 8000
           </span>
         </div>
+        <h1 className="text-3xl font-semibold">CRUD Application</h1>
         <div className="flex items-center justify-end pr-10 gap-3">
           <span className="text-lg italic flex-nowrap">Create new Card</span>
           <button className="bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600">
