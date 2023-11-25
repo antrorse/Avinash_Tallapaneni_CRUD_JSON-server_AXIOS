@@ -12,8 +12,12 @@ This project demonstrates the **CRUD Application** with the help of API calls be
 ## Screenshot
 
 ### Demo
-![](./Demo.mp4)
 
+![](./DemoVideo.mp4)
+
+### Desktop Version
+
+![](./homepage.png)
 
 ## Getting Started
 
@@ -51,7 +55,7 @@ The project structure is organized as follows:
 - **src**: Contains the source code for the Crud Application.
 - **components**: Contains reusable components used throughout the app.
 - **pages**: Contains the main pages of the app.
-- **data** : Contains ***db.json*** which holds database info 
+- **data** : Contains **_db.json_** which holds database info
 - **App.js**: The main component that renders the app.
 - **index.js**: The entry point of the app.
 
