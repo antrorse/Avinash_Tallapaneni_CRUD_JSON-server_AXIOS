@@ -13,7 +13,9 @@ This project demonstrates the **CRUD Application** with the help of API calls be
 
 ### Demo
 
-![](./DemoVideo.mp4)
+https://github.com/antrorse/Avinash_Tallapaneni_CRUD_JSON-server_AXIOS/assets/150832913/9e8f3e74-7b1d-4d3d-8a77-ca2fd915c02c
+
+
 
 ### Desktop Version
 
