@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "image": "https://images.unsplash.com/photo-1700495559545-7b143798cb46?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bgBlue": true,
+      "borderGreen": true,
+      "login": "msal",
+      "textarea": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, quos laudantium? Dolore animi, nulla molestiae id voluptate a ipsam perspiciatis vero, nemo modi iure quam cupiditate deserunt. Nihil, repellat eius.",
+      "skill": "react",
+      "id": 1
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1700513970101-93c7e26d56de?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bgBlue": false,
+      "borderGreen": true,
+      "login": "msal",
+      "textarea": "",
+      "skill": "nodejs",
+      "id": 2
+    }
+  ]
+}
