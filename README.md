@@ -30,7 +30,7 @@ To get started with the Cine Spectrum app, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/antrorse/Avinash_Tallapaneni_CRUD_JSON-server_AXIOS.git
    ```
 
 2. Install the dependencies:
