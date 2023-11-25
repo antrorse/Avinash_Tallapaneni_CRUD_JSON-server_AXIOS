@@ -11,17 +11,9 @@ This project demonstrates the **CRUD Application** with the help of API calls be
 
 ## Screenshot
 
-### Desktop version
+### Demo
+![](./Demo.mp4)
 
-![](./Main.png)
-
-### Create Card
-
-![](./create.png)
-
-### Edit Card
-
-![](./edit.png)
 
 ## Getting Started
 
@@ -47,6 +39,7 @@ To get started with the Cine Spectrum app, follow these steps:
    ```
 
 4. Run the following command so Json server can be acessed locally.
+
    ```bash
    npx json-server --watch src/data/db.json --port 8000
    ```

@@ -1,20 +1,11 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ card, setIsLoading }) => {
+const Card = ({ card, setDeleteCardID }) => {
   const { image, bgBlue, borderGreen, login, skill, textarea, id } = card;
   const placeholder = "https://placehold.co/300x150";
 
   const onImageError = (e) => {
     e.target.src = placeholder;
-  };
-
-  const DB_URL = `http://localhost:8000/cards/${id}`;
-
-  const deleteCard = async () => {
-    await axios.delete(DB_URL);
-    setIsLoading(() => true);
   };
 
   return (
@@ -63,7 +54,7 @@ const Card = ({ card, setIsLoading }) => {
             </button>
             <button
               className="bg-red-800 w-[75px] text-white px-2 py-1 rounded-md hover:bg-blue-600"
-              onClick={deleteCard}
+              onClick={() => setDeleteCardID(() => id)}
             >
               delete
             </button>

@@ -1,0 +1,12 @@
+.modal {
+  animation: slideIn 0.5s ease-in;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

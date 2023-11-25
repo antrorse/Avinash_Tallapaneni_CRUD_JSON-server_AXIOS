@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Card from "../components/Card";
 import axios from "axios";
+import Modal from "../components/Modal";
 
 const MainPage = () => {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [deleteCardID, setDeleteCardID] = useState(null);
 
   const DB_URL = "http://localhost:8000/cards";
 
@@ -22,6 +24,7 @@ const MainPage = () => {
 
   const handleCancel = () => {
     navigate("/");
+    setDeleteCardID(() => null);
   };
   useEffect(() => {
     fetchData();
@@ -37,7 +40,7 @@ const MainPage = () => {
 
   return (
     <div className=" w-full h-[100vh] flex flex-col justify-start items-stretch bg-slate-800 text-slate-100 relative  overflow-scroll">
-      <nav className="bg-slate-900 z-10  w-full flex items-center justify-between p-2 ">
+      <nav className="bg-slate-900 z-10  w-full flex items-center justify-between p-2 fixed ">
         <div className=" flex flex-col items-center ">
           <span className="text-xl">Fetching data using axios.</span>
           <span className="italic text-sm">
@@ -52,14 +55,24 @@ const MainPage = () => {
           </button>
         </div>
       </nav>
-      <div className=" flex flex-col gap-10 justify-start p-10">
+      <div className=" flex flex-col gap-10 justify-start p-10 pt-20">
         <div className="flex flex-wrap gap-5 items-end">
           {cards &&
             cards.map((card, idx) => {
-              return <Card key={idx} card={card} setIsLoading={setIsLoading} />;
+              return (
+                <Card key={idx} card={card} setDeleteCardID={setDeleteCardID} />
+              );
             })}
         </div>
       </div>
+
+      <Modal
+        handleCancel={handleCancel}
+        deleteCardID={deleteCardID}
+        setDeleteCardID={setDeleteCardID}
+        setIsLoading={setIsLoading}
+      />
+      
     </div>
   );
 };
