@@ -13,7 +13,7 @@ This project demonstrates the **CRUD Application** with the help of API calls be
 
 ### Desktop version
 
-![](./mainpage.png)
+![](./Main.png)
 
 ### Create Card
 
